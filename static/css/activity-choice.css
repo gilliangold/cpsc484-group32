@@ -1,0 +1,72 @@
+body {
+    background-color: #87cefa;
+    margin: 0;
+}
+
+.vertical {
+    border-left: 6px solid white;
+    height: 80%;
+    position:absolute;
+    top: 53%;
+    left: 50%;
+    z-index: 1;
+}
+
+#kinect-window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#top-box {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+
+#stretching-image {
+    width: 40%;
+    float: left;
+    padding: 60px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+#breathing-image {
+    width: 45%;
+    float: right;
+    margin-top: 40px;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+#stretching-image img, #breathing-image img {
+    display: block;
+    width: 65%;
+    height: auto;
+}
+
+#stretching-caption, #breathing-caption {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+#koala-image {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: auto;
+    z-index: 2;
+}
