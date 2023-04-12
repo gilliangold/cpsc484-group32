@@ -33,6 +33,7 @@ body {
     background-color: gray;
     grid-column: 2/3;
     grid-row: 2/3;
+    block-size: 35%;
 }
 
 #breathing-image {
