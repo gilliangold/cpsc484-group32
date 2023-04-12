@@ -33,10 +33,21 @@
           padding: 20px;
           box-sizing: border-box;
         }
-        #stretching-image img, #multi-stretching-image img {
+        
+        #stretching-image img {
           display: block;
-          width: 100%;
+          width: 55%;
           height: auto;
+        }
+
+        #multi-stretching-image img {
+            display: inline-block;
+            width: 45%; /* adjust as needed */
+            margin-right: 10px; /* adjust as needed */
+        }
+
+        #player-one {
+            margin-right: 0;
         }
         #stretching-caption, #multi-stretching-caption {
           text-align: center;
@@ -80,8 +91,8 @@
         <img id="koala-image" src="/images/koala-sitting.webp" alt="Koala">
      
         <div id="multi-stretching-image">
-            <img src="/images/stretching.png" alt="Two people stretching">
-            <img src="/images/stretching.png" alt="Two people stretching">
+            <img id="player-one" src="/images/stretching.png" alt="Two people stretching">
+            <img id="player-two" src="/images/stretching.png" alt="Two people stretching">
             <div id="multi-stretching-caption">
                 Two Players
             </div>
