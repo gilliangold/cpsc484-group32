@@ -24,7 +24,9 @@ def stretch_player_mode():
 
 @app.route("/exercise", methods=['GET', 'POST'])
 def exercise():
-    html = render_template("exercise.html")
+    choice = request.args.get("choice", "stretch")
+    mode = request.args.get("mode", "1")
+    html = render_template("exercise.html", choice=choice, mode=mode)
     return make_response(html)
 
 if __name__ == "__main__":

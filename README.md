@@ -8,7 +8,11 @@ Run the project:
 > - activity-choice: http://127.0.0.1:8000/activity_choice
 > - breathe-player-mode: http://127.0.0.1:8000/breathe_player_mode
 > - stretch-player-mode: http://127.0.0.1:8000/stretch_player_mode
-> - exercise: http://127.0.0.1:8000/exercise
+> - exercise:    
+>   - stretch: http://127.0.0.1:8000/exercise?choice=stretch   
+>   - breathe: http://127.0.0.1:8000/exercise?choice=breathe    
+>   - with player mode: http://127.0.0.1:8000/exercise?choice=breathe&mode=2    
+> 
 (for new webpage, you can create similar functions in the app.py file)
 
 - templates: html files
