@@ -1,13 +1,18 @@
 body {
-    background-color: rgb(249, 249, 166);
+    background-color: #FFFB97;
     margin: 0;
+}
+
+.container {
+    padding: 20px;
+    gap: 20px;
 }
 
 .vertical {
     border-left: 6px solid white;
-    height: 90%;
+    height: 100%;
     position:absolute;
-    top: 53%;
+    top: 50%;
     left: 50%;
     z-index: 1;
 }
@@ -40,7 +45,8 @@ body {
   
 #stretching-image img {
     display: block;
-    width: 55%;
+    width: 50%;
+    margin-left: 20%;
     height: auto;
 }
 
@@ -64,7 +70,7 @@ body {
 
 #koala-image {
     position: absolute;
-    top: 350px;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%);
     width: 20%;
