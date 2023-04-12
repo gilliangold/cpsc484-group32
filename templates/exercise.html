@@ -9,13 +9,23 @@
 </head>
 <body>
 <div class = "vertical"></div>
-<div class="circle">30</div>
+<div class="circle" id="timer">30</div>
 <div id="pet">
-    <img src="static/images/koala.png" class="koala"/>
+    <img src="static/images/koala-sitting.webp" class="koala"/>
 </div>
 <div class="container">
+    <div id="video">
+        <video class="stretch" controls autoplay muted width="100%">
+            <source src="static/videos/stretch.mp4" type="video/mp4">
+        </video>
+    </div>
     <div id="kinect-window">
-        <img class="twod" height="330px"/>
+        <div>
+            <img class="twod" width="100%"/>
+        </div>
+        <div class="instruction">
+            1 Player Required
+        </div>
     </div>
 </div>
 

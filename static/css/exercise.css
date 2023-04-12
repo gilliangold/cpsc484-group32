@@ -1,7 +1,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #FFFB97
+    background-color: #FFFB97;
+    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -9,16 +10,27 @@ html, body {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 30px 1fr 100px;
+    grid-template-rows: 0px 1fr 100px;
+}
+
+#video {
+    display: flex;
+    float: left;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 #kinect-window {
-    display: flex;
+    display: block;
     float: right;
     justify-content: center;
-    align-items: center;
     grid-column: 2/3;
     grid-row: 2/3;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .vertical {
@@ -47,13 +59,22 @@ html, body {
 }
 
 .koala {
-   height: 80px;
-   width: 80px;
+   height: 100px;
+   width: 100px;
    position: relative;
    top: 0%;
    left: 100%;
    margin-left: -100px;
    margin-top:10px
+}
+
+.instruction {
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background: #FFF;
+    font-size: 40px;
 }
 
 
