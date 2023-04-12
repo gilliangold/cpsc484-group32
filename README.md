@@ -9,6 +9,7 @@ Run the project:
 > - breathe-player-mode: http://127.0.0.1:8000/breathe_player_mode
 > - stretch-player-mode: http://127.0.0.1:8000/stretch_player_mode
 > - exercise: http://127.0.0.1:8000/exercise
+(for new webpage, you can create similar functions in the app.py file)
 
 - templates: html files
 - static: css and js files
