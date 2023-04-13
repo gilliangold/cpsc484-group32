@@ -29,5 +29,21 @@ def exercise():
     html = render_template("exercise.html", choice=choice, mode=mode)
     return make_response(html)
 
+@app.route("/results", methods=['GET', 'POST'])
+def results():
+    choice = request.args.get("choice", "stretch")
+    mode = request.args.get("mode", "1")
+    html = render_template("results.html", choice=choice, mode=mode)
+    return make_response(html)
+
+@app.route("/reward", methods=['GET', 'POST'])
+def reward():
+    choice = request.args.get("choice", "stretch")
+    mode = request.args.get("mode", "1")
+    html = render_template("reward.html", choice=choice, mode=mode)
+    return make_response(html)
+
+
+
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
