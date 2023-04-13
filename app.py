@@ -29,18 +29,19 @@ def exercise():
     html = render_template("exercise.html", choice=choice, mode=mode)
     return make_response(html)
 
-@app.route("/results", methods=['GET', 'POST'])
-def results():
-    choice = request.args.get("choice", "stretch")
-    mode = request.args.get("mode", "1")
-    html = render_template("results.html", choice=choice, mode=mode)
+@app.route("/results_breathe", methods=['GET', 'POST'])
+def results_breathe():
+    html = render_template("result_breathe.html")
+    return make_response(html)
+
+@app.route("/results_stretch", methods=['GET', 'POST'])
+def results_stretch():
+    html = render_template("result_stretch.html")
     return make_response(html)
 
 @app.route("/reward", methods=['GET', 'POST'])
 def reward():
-    choice = request.args.get("choice", "stretch")
-    mode = request.args.get("mode", "1")
-    html = render_template("reward.html", choice=choice, mode=mode)
+    html = render_template("reward.html")
     return make_response(html)
 
 
