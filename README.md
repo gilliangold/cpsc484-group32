@@ -8,7 +8,7 @@ Run the project:
 > - activity-choice: http://127.0.0.1:8000/activity_choice
 > - breathe-player-mode: http://127.0.0.1:8000/breathe_player_mode
 > - stretch-player-mode: http://127.0.0.1:8000/stretch_player_mode
-> - exercise:    
+> - activities:    
 >   - stretch: http://127.0.0.1:8000/exercise?choice=stretch   
 >   - breathe: http://127.0.0.1:8000/exercise?choice=breathe    
 >   - with player mode: http://127.0.0.1:8000/exercise?choice=breathe&mode=2    
