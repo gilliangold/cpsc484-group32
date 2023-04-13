@@ -15,6 +15,21 @@ body {
     block-size: 30%;
 }
 
+/* #koala {
+    width: 40%;
+    float: left;
+    padding: 60px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+#home {
+    width: 40%;
+    float: right;
+    margin-top: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+} */
 #koala {
     width: 40%;
     float: left;
