@@ -1,0 +1,81 @@
+body {
+    background-color: #FFFB97;
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+    gap: 20px;
+}
+
+.vertical {
+    border-left: 6px solid white;
+    height: 110%;
+    position:absolute;
+    /* top: 50%; */
+    left: 50%;
+    z-index: -1;
+}
+
+#kinect-window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    block-size: 35%;
+}
+
+#top-box {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+#stretching-image, #multi-stretching-image {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 70px;
+}
+  
+#stretching-image img {
+    display: block;
+    width: 50%;
+    margin-left: 20%;
+    height: auto;
+}
+
+#multi-stretching-image img {
+      display: inline-block;
+      width: 45%; /* adjust as needed */
+      margin-right: 10px; /* adjust as needed */
+}
+
+#player-one {
+      margin-right: 0;
+}
+
+#stretching-caption, #multi-stretching-caption {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+#koala-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: auto;
+    z-index: 2;
+}
+  

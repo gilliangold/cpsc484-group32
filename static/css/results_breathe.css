@@ -1,0 +1,92 @@
+body {
+    background-color: lightgreen;
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+    gap: 20px;
+}
+
+.vertical {
+    border-left: 6px solid white;
+    height: 110%;
+    position:absolute;
+    /* top: 50%; */
+    left: 50%;
+    z-index: -1;
+}
+
+#top-box {
+    font-family: Arial, sans-serif;background-color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+#kinect-window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    block-size: 35%;
+}
+
+#breathing-image {
+    width: 45%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#multi-breathing-image {
+    width: 45%;
+    float: right;
+    padding: 50px;
+    box-sizing: border-box;
+}
+  
+#breathing-image img {
+    display: block;
+    width: 55%;
+    height: auto;
+    margin-left: 15%;
+}
+
+#multi-breathing-image img {
+    display: inline-block;
+    width: 40%; /* adjust as needed */
+    margin-right: 10px; /* adjust as needed */
+}
+
+#breathing-caption, #multi-breathing-caption {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+#koala-image {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: auto;
+    z-index: 2;
+}
+
+#koala-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: auto;
+    z-index: 2;
+}
