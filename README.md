@@ -11,10 +11,11 @@ Run the project:
 > - activities:    
 >   - stretch: http://127.0.0.1:8000/exercise?choice=stretch   
 >   - breathe: http://127.0.0.1:8000/exercise?choice=breathe    
->   - with player mode: http://127.0.0.1:8000/exercise?choice=breathe&mode=2    
-> result-breathe: http://127.0.0.1:8000/results_breathe
-> result-stretch: http://127.0.0.1:8000/results_stretch
-> reward: http://127.0.0.1:8000/reward
+>   - with player mode: http://127.0.0.1:8000/exercise?choice=breathe&mode=2     
+> - result-breathe: http://127.0.0.1:8000/results_breathe. 
+> - result-stretch: http://127.0.0.1:8000/results_stretch
+> - reward: http://127.0.0.1:8000/reward
+
 (for new webpage, you can create similar functions in the app.py file)
 
 - templates: html files
