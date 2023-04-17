@@ -1,5 +1,5 @@
 body {
-    background-color: #FFFB97;
+    background-color: lightgreen;
     margin: 0;
 }
 
@@ -17,6 +17,15 @@ body {
     z-index: -1;
 }
 
+#top-box {
+    font-family: Arial, sans-serif;background-color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
 #kinect-window {
     display: flex;
     justify-content: center;
@@ -27,41 +36,40 @@ body {
     block-size: 35%;
 }
 
-#top-box {
-    background-color: white;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 24px;
-    font-family: Arial, sans-serif;
-}
-
-#stretching-image, #multi-stretching-image {
-    width: 50%;
+#breathing-image {
+    width: 45%;
     float: left;
     padding: 20px;
     box-sizing: border-box;
-    margin-top: 70px;
+}
+
+#multi-breathing-image {
+    width: 45%;
+    float: right;
+    padding: 50px;
+    box-sizing: border-box;
 }
   
-#stretching-image img {
+#breathing-image img {
     display: block;
-    width: 50%;
-    margin-left: 20%;
+    width: 55%;
     height: auto;
+    margin-left: 15%;
 }
 
-#multi-stretching-image img {
-      display: inline-block;
-      width: 45%; /* adjust as needed */
-      margin-right: 10px; /* adjust as needed */
+#multi-breathing-image img {
+    display: inline-block;
+    width: 40%; /* adjust as needed */
+    margin-right: 10px; /* adjust as needed */
 }
 
-#player-one {
-      margin-right: 0;
-}
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
 
-#stretching-caption, #multi-stretching-caption {
+#breathing-caption, #multi-breathing-caption {
     text-align: center;
     font-size: 18px;
     margin-top: 10px;
@@ -69,13 +77,40 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#koala-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 20%;
+#koala-main-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     height: auto;
-    z-index: 2;
 }
-  
+
+#first-txt {
+    position: absolute;
+    top: 17px;
+    left: 20px;
+}
+
+#koala-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 25%;
+    }
+    
+    .parentContainer {
+    position: relative;
+    text-align: center;
+    color: black;
+    }
+
+    .bottom-right {
+        position: absolute;
+        font-size: 60px;
+        bottom: 300px;
+        right: 60px;
+        }
+
+
+
