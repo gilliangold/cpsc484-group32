@@ -2,7 +2,7 @@ var host = "cpsc484-01.yale.internal:8888";
 
 $(document).ready(function() {
   twod.start();
-  console.log($('#choice').val())
+
   if ($('#choice').val() == 'stretch') {
     $('body, html').css("background-color", "#FFFB97");
     $('.stretch').show();
@@ -32,9 +32,9 @@ var twod = {
 };
 
 $(document).ready( function() {
-    var time = $('#choice').val() == 'stretch' ? 35 : 30
+    var time = $('#choice').val() == 'stretch' ? 5 : 30
     var refresh_time = $('#choice').val() == 'stretch' ? 35 : 30
-    var end_num = $('#choice').val() == 'stretch' ? 8 : 10
+    var end_num = $('#choice').val() == 'stretch' ? 1 : 10
     var nums = 0
     setInterval( function() {
         time--;
@@ -52,7 +52,7 @@ $(document).ready( function() {
             }
         }
         if (nums == end_num) {
-            window.location.pathname = "/"
+            window.location.href = "/results?choice=" + $('#choice').val() + "&mode=" + $('#mode').val()
         }
     }, 1000 );
 });
