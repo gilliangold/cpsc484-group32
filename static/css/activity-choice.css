@@ -8,6 +8,12 @@ body {
     gap: 20px;
 }
 
+/*test comment*/
+
+.test {
+ padding: 20px;
+}
+
 .vertical {
     border-left: 6px solid white;
     height: 110%;
