@@ -29,32 +29,20 @@ def exercise():
     html = render_template("exercise.html", choice=choice, mode=mode)
     return make_response(html)
 
-@app.route("/results_stretch", methods=['GET', 'POST'])
-def results_stretch():
+@app.route("/results", methods=['GET', 'POST'])
+def results():
     choice = request.args.get("choice", "stretch")
     mode = request.args.get("mode", "1")
-    html = render_template("results_stretch.html", choice=choice, mode=mode)
-    return make_response(html)
-
-@app.route("/results_breathe", methods=['GET', 'POST'])
-def results_breathe():
-    choice = request.args.get("choice", "breathe")
-    mode = request.args.get("mode", "1")
-    html = render_template("results_breathe.html", choice=choice, mode=mode)
-    return make_response(html)
-
-@app.route("/results_breathe_two", methods=['GET', 'POST'])
-def results_breathe_two():
-    choice = request.args.get("choice", "breathe")
-    mode = request.args.get("mode", "1")
-    html = render_template("results_breathe_two.html", choice=choice, mode=mode)
-    return make_response(html)
-
-@app.route("/results_stretch_two", methods=['GET', 'POST'])
-def results_stretch_two():
-    choice = request.args.get("choice", "stretch")
-    mode = request.args.get("mode", "1")
-    html = render_template("results_stretch_two.html", choice=choice, mode=mode)
+    if choice == "stretch":
+        if mode == "1":
+            html = render_template("results_stretch.html", choice=choice, mode=mode)
+        else:
+            html = render_template("results_stretch_two.html", choice=choice, mode=mode)
+    else:
+        if mode == "1":
+            html = render_template("results_breathe.html", choice=choice, mode=mode)
+        else:
+            html = render_template("results_breathe_two.html", choice=choice, mode=mode)
     return make_response(html)
 
 @app.route("/reward", methods=['GET', 'POST'])
@@ -65,4 +53,4 @@ def reward():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8001)
+    app.run(debug=True, port=8000)
