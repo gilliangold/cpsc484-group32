@@ -8,7 +8,7 @@ $(document).ready(function() {
   // start timer when page loads
   timer = setTimeout(function() {
     window.location.href = "/welcome"; // redirect to welcome page after 3 minutes
-  }, 180000); // 3 minutes in milliseconds
+  }, 2000); // 3 minutes in milliseconds
 });
 
 var frames = {
