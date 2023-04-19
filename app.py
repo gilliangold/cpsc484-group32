@@ -12,14 +12,13 @@ def activity_choice():
     html = render_template("activity-choice.html")
     return make_response(html)
 
-@app.route("/breathe_player_mode", methods=['GET', 'POST'])
-def breathe_player_mode():
-    html = render_template("breathe-player-mode.html")
-    return make_response(html)
-
-@app.route("/stretch_player_mode", methods=['GET', 'POST'])
-def stretch_player_mode():
-    html = render_template("stretch-player-mode.html")
+@app.route("/player_mode", methods=['GET', 'POST'])
+def player_mode():
+    choice = request.args.get("choice", "stretch")
+    if choice == "stretch":
+        html = render_template("stretch-player-mode.html")
+    else:
+        html = render_template("breathe-player-mode.html")
     return make_response(html)
 
 @app.route("/exercise", methods=['GET', 'POST'])
