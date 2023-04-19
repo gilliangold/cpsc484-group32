@@ -7,7 +7,7 @@ $(document).ready(function() {
   
   // start timer when page loads
   timer = setTimeout(function() {
-    window.location.href = "/welcome"; // redirect to welcome page after 3 minutes
+    window.location.href = "ws://" + host + "/frames/welcome"; // redirect to welcome page after 3 minutes
   }, 2000); // 3 minutes in milliseconds
 });
 
