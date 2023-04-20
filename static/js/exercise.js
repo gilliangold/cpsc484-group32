@@ -2,6 +2,8 @@ var host = "cpsc484-01.yale.internal:8888";
 var timer = null;
 
 $(document).ready(function() {
+  $('.warning').hide();
+  frames.start();
   twod.start();
 
   if ($('#choice').val() == 'stretch') {
@@ -17,7 +19,7 @@ $(document).ready(function() {
 
   // start timer when page loads
   timer = setTimeout(function() {
-    window.location.href = "/welcome"; // redirect to welcome page after 3 minutes
+    window.location.href = "/"; // redirect to welcome page after 3 minutes
   }, 180000); // 3 minutes in milliseconds
 });
 
@@ -37,10 +39,28 @@ var twod = {
   }
 };
 
+var frames = {
+  socket: null,
+
+  start: function() {
+      var url = "ws://" + host + "/frames";
+      frames.socket = new WebSocket(url);
+      frames.socket.onmessage = function (event) {
+        var frame = JSON.parse(event.data);
+        if (frame.people.length != $('#mode').val()) {
+            $('.warning').show();
+        }
+        else {
+            $('.warning').hide();
+        }
+      }
+    },
+};
+
 $(document).ready( function() {
-    var time = $('#choice').val() == 'stretch' ? 5 : 30
+    var time = $('#choice').val() == 'stretch' ? 35 : 30
     var refresh_time = $('#choice').val() == 'stretch' ? 35 : 30
-    var end_num = $('#choice').val() == 'stretch' ? 1 : 10
+    var end_num = $('#choice').val() == 'stretch' ? 8 : 10
     var nums = 0
     setInterval( function() {
         time--;
