@@ -8,7 +8,7 @@ $(document).ready(function() {
   // start timer when page loads
   timer = setTimeout(function() {
     window.location.href = "http://127.0.0.1:8000/"; // redirect to welcome page after 3 minutes
-  }, 4000); // 3 minutes in milliseconds
+  }, 2000); // 3 minutes in milliseconds
 });
 
 var frames = {
@@ -22,13 +22,13 @@ var frames = {
       if (command !== null) {
         sendWristCommand(command);
       }
-      else {
-        // reset timer if user has moved
-        clearTimeout(timer);
-        timer = setTimeout(function() {
-          window.location.href = "http://127.0.0.1:8000/"; // redirect to welcome page after 3 minutes
-        }, 4000); // 3 minutes in milliseconds
-      }
+      // else {
+      //   // reset timer if user has moved
+      //   clearTimeout(timer);
+      //   timer = setTimeout(function() {
+      //     window.location.href = "http://127.0.0.1:8000/"; // redirect to welcome page after 3 minutes
+      //   }, 4000); // 3 minutes in milliseconds
+      // }
     }
   },
 
