@@ -91,26 +91,21 @@ body {
     left: 20px;
 }
 
-#koala-image{
+#koala {
+    position: relative;
+  }
+  
+  #koala img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 50%;
     height: auto;
-    width: 25%;
-    }
-    
-    .parentContainer {
-    position: relative;
-    text-align: center;
-    color: black;
-    }
-
-    .bottom-right {
-        position: absolute;
-        font-size: 60px;
-        bottom: 300px;
-        right: 60px;
-        }
-
-
-
+  }
+  
+  #results {
+    position: absolute;
+    bottom: 13%;
+    right: 34%;
+    font-size: 2vw; 
+  }
