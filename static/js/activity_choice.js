@@ -4,11 +4,11 @@ var timer = null;
 $(document).ready(function() {
   frames.start();
   twod.start();
-  
+
   // start timer when page loads
   timer = setTimeout(function() {
     window.location.href = "http://127.0.0.1:8000/"; // redirect to welcome page after 3 minutes
-  }, 2000); // 3 minutes in milliseconds
+  }, 180000); // 3 minutes in milliseconds
 });
 
 var frames = {
@@ -21,6 +21,13 @@ var frames = {
       var command = frames.get_left_wrist_command(JSON.parse(event.data));
       if (command !== null) {
         sendWristCommand(command);
+      }
+      else {
+        // reset timer if user has moved
+        clearTimeout(timer);
+        timer = setTimeout(function() {
+          window.location.href = "http://127.0.0.1:8000/"; // redirect to welcome page after 3 minutes
+        }, 180000); // 3 minutes in milliseconds
       }
     }
   },

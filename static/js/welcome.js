@@ -1,14 +1,8 @@
 var host = "cpsc484-01.yale.internal:8888";
-var timer = null;
 
 $(document).ready(function() {
   frames.start();
   twod.start();
-
-  // start timer when page loads
-  timer = setTimeout(function() {
-    window.location.href = "/welcome"; // redirect to welcome page after 3 minutes
-  }, 180000); // 3 minutes in milliseconds
 });
 
 var frames = {
