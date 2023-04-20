@@ -8,7 +8,7 @@ $(document).ready(function() {
   // start timer when page loads
   timer = setTimeout(function() {
     window.location.href = "http://127.0.0.1:8000/"; // redirect to welcome page after 3 minutes
-  }, 180000); // 3 minutes in milliseconds
+  }, 4000); // 3 minutes in milliseconds
 });
 
 var frames = {
@@ -27,7 +27,7 @@ var frames = {
         clearTimeout(timer);
         timer = setTimeout(function() {
           window.location.href = "http://127.0.0.1:8000/"; // redirect to welcome page after 3 minutes
-        }, 180000); // 3 minutes in milliseconds
+        }, 4000); // 3 minutes in milliseconds
       }
     }
   },
