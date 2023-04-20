@@ -1,5 +1,5 @@
 body {
-    background-color: lightgreen;
+    background-color: #FFFB97;
     margin: 0;
 }
 
@@ -107,5 +107,7 @@ body {
     position: absolute;
     bottom: 13%;
     right: 34%;
-    font-size: 2vw; 
+    font-size: 1.85vw;
+    font-family: Arial, sans-serif;
+    color: black; 
   }

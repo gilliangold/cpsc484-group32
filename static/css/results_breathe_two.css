@@ -63,11 +63,7 @@ body {
     margin-right: 10px; /* adjust as needed */
 }
 
-.bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-  }
+
 
 #breathing-caption, #multi-breathing-caption {
     text-align: center;
@@ -107,16 +103,18 @@ body {
 
     .bottom-right {
         position: absolute;
-        font-size: 25px;
-        bottom: 100px;
-        right: 275px;
+        font-size: 1.25vw;
+        font-family: Arial, sans-serif;
+        bottom: 35%;
+        right: 20%;
         }
 
     .bottom-left {
         position: absolute;
-        font-size: 25px;
-        bottom: 100px;
-        left: 300px;
+        font-size: 1.25vw;
+        font-family: Arial, sans-serif;
+        bottom: 35%;
+        left: 16%;
     }
 
 .column {
