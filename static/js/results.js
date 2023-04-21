@@ -14,7 +14,7 @@ var frames = {
     frames.socket.onmessage = function (event) {
       var command = frames.get_left_wrist_command(JSON.parse(event.data));
       if (command == 73) {
-        window.location.href = "/activity_choice"
+        window.location.href = "/reward"
       }
     }
   },
