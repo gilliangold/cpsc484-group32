@@ -1,4 +1,4 @@
-var host = "cpsc484-01.yale.internal:8888";
+var host = "cpsc484-04.yale.internal:8888";
 var timer = null;
 
 $(document).ready(function() {

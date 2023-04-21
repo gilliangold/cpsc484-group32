@@ -1,6 +1,6 @@
 // Adapted from https://p5js.org/examples/interaction-snake-game.html
 //
-var host = "cpsc484-01.yale.internal:8888";
+var host = "cpsc484-04.yale.internal:8888";
 $(document).ready(function() {
   frames.start();
   twod.start();

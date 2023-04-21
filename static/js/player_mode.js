@@ -1,8 +1,10 @@
-var host = "cpsc484-01.yale.internal:8888";
+var host = "cpsc484-04.yale.internal:8888";
 var timer = null;
 
 $(document).ready(function() {
-  frames.start();
+  setTimeout(function () {
+      frames.start();
+    }, 2000);
   twod.start();
 
   // start timer when page loads
@@ -19,6 +21,7 @@ var frames = {
     frames.socket = new WebSocket(url);
     frames.socket.onmessage = function (event) {
       var command = frames.get_left_wrist_command(JSON.parse(event.data));
+      console.log(command)
       if (command !== null) {
         sendWristCommand(command);
         clearTimeout(timer);
