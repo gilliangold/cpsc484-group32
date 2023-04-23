@@ -88,7 +88,11 @@ var twod = {
 
 function sendWristCommand(command) {
   switch (command) {
+    case 73:
+      window.location.href = "/reward?action=up"
+      break;
     case 74:
+      window.location.href = "/reward?action=up"
       break;
     case 76:
       window.location.href = "/"

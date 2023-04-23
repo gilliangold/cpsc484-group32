@@ -47,7 +47,13 @@ def results():
 @app.route("/reward", methods=['GET', 'POST'])
 def reward():
     mode = request.args.get("mode", "1")
-    html = render_template("reward.html", mode=mode)
+    action = request.args.get("left", "up")
+    if action == "left":
+        html = render_template("reward_left.html", mode=mode)
+    elif action == "up":
+        html = render_template("reward_up.html", mode=mode)
+    else: 
+        html = render_template("reward_origin.html", mode=mode)
     return make_response(html)
 
 
