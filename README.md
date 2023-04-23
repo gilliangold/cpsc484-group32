@@ -26,7 +26,7 @@ Run the project:
 Students cannot be maximally productive all the time, but current study breaks often center around social media usage, which may not be the most restful or relaxing. Our installation of a Wellness Study Break seeks to address this problem by helping people engage in healthier activities while they are not doing work. Users can pick between a stretching or breathing exercise, either solo or with a partner! Once they complete the activity, they can see their results and are rewarded by getting to play with a 3D pet model!
 
 # Tasks of Installation
-(1) Selecting an activity: Users can choose from two options, including breathing and yoga, which are displayed on the screen with spatial positioning. Additionally, they can select either single-player or multiplayer modes.
+(1) Selecting an activity: Users can choose from two options, including breathing and yoga, which are displayed on the screen with spatial positioning. Additionally, they can select either single-player or multiplayer modes. (CHANGE THIS BASED ON FEEDBACK FROM A5)
 
 (2) Engaging in wellness-promoting activities: Once the user has chosen the activity and the mode, the system guides the user through a series of poses, each lasting 30 seconds. The system provides spatial positioning feedback on the right side of the screen to help users track their moves. Users are given a five-minute duration to complete the activity, and upon completion, their final completeness and accuracy are displayed, and they are rewarded.
 
