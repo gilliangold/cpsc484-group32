@@ -5,8 +5,8 @@ Run the project:
 > Go to different links in the brower for different webpages:
 > - welcome: http://127.0.0.1:8000/
 > - activity-choice: http://127.0.0.1:8000/activity_choice
-> - breathe-player-mode: http://127.0.0.1:8000/player_mode?choice=stretch
-> - stretch-player-mode: http://127.0.0.1:8000/player_mode?choice=breathe
+> - stretch-player-mode: http://127.0.0.1:8000/player_mode?choice=stretch
+> - breathe-player-mode: http://127.0.0.1:8000/player_mode?choice=breathe
 > - activities:
     >   - stretch: http://127.0.0.1:8000/exercise?choice=stretch
 >   - breathe: http://127.0.0.1:8000/exercise?choice=breathe
