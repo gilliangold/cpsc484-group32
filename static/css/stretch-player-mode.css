@@ -46,15 +46,16 @@ body {
   
 #stretching-image img {
     display: block;
-    width: 50%;
+    width: 35%;
     margin-left: 20%;
     height: auto;
 }
 
 #multi-stretching-image img {
       display: inline-block;
-      width: 45%; /* adjust as needed */
+      width: 35%; /* adjust as needed */
       margin-right: 10px; /* adjust as needed */
+      margin-left: 10%;
 }
 
 #player-one {

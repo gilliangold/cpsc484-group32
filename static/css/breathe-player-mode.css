@@ -61,6 +61,7 @@ body {
     display: inline-block;
     width: 40%; /* adjust as needed */
     margin-right: 10px; /* adjust as needed */
+    margin-left: 30px;
 }
 
 #breathing-caption, #multi-breathing-caption {
@@ -69,16 +70,6 @@ body {
     margin-top: 10px;
     font-weight: bold;
     font-family: Arial, sans-serif;
-}
-
-#koala-image {
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 150px;
-    height: auto;
-    z-index: 2;
 }
 
 #koala-image {
