@@ -51,7 +51,8 @@ Ben Sterling (bgs37)
 
 
 Cathy Li (sl2857)
-- Implemented the utilization of spatial data from screen control by receiving kinect data in the backend.
+- Created the exercise screens with different activities (stretch/breathe) and player modes (single/multiple).
+- Implemented the utilization of spatial data for switching between screens by receiving kinect data in the backend.
 - Implemented the error prevention popup window in the exercise screen.
 - Contributed to writing the README file.
 - Collaborated on TV display debugging and testing.
