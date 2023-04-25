@@ -37,44 +37,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
-/* #koala {
-    width: 40%;
-    float: left;
-    padding: 60px;
-    box-sizing: border-box;
-    margin-top: 10px;
-}
-
-#home {
-    width: 40%;
-    float: right;
-    margin-top: 40px;
-    padding: 40px;
-    box-sizing: border-box;
-} */
-#koala {
+#koala-image {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 30%;
     height: auto;
-    float: left;
-    margin-left: 10%;
-    padding: 60px;
-    box-sizing: border-box;
-}
-
-#home {
-    width: 30%;
-    height: auto;
-    float: right;
-    margin-right: 10%;
-    padding: 60px;
-    box-sizing: border-box;
-}
-
-#koala img {
-    width: 100%
-}
-
-#home img {
-    width: 100%
+    z-index: 2;
 }
