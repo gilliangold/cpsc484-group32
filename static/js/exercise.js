@@ -16,11 +16,6 @@ $(document).ready(function() {
     $('.stretch').hide();
     $('.breathe').show();
   }
-
-  // start timer when page loads
-  timer = setTimeout(function() {
-    window.location.href = "/"; // redirect to welcome page after 3 minutes
-  }, 180000); // 3 minutes in milliseconds
 });
 
 var twod = {
@@ -49,6 +44,12 @@ var frames = {
         var frame = JSON.parse(event.data);
         if (frame.people.length != $('#mode').val()) {
             $('.warning').show();
+            if (frame.people.length == 0) {
+                // start timer when page loads
+                timer = setTimeout(function() {
+                    window.location.href = "/"; // redirect to welcome page after 3 minutes
+                }, 180000); // 3 minutes in milliseconds
+            }
         }
         else {
             $('.warning').hide();
@@ -60,7 +61,7 @@ var frames = {
 $(document).ready( function() {
     var time = $('#choice').val() == 'stretch' ? 35 : 30
     var refresh_time = $('#choice').val() == 'stretch' ? 35 : 30
-    var end_num = $('#choice').val() == 'stretch' ? 8 : 10
+    var end_num = $('#choice').val() == 'stretch' ? 2 : 3
     var nums = 0
     setInterval( function() {
         time--;

@@ -10,8 +10,8 @@ body {
 
 .vertical {
     border-left: 6px solid white;
-    height: 110%;
-    position:absolute;
+    height: 100%;
+    position: absolute;
     /* top: 50%; */
     left: 50%;
     z-index: -1;
@@ -36,32 +36,37 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#stretching-image, #multi-stretching-image {
+#stretching-image,
+#multi-stretching-image {
     width: 50%;
     float: left;
     padding: 20px;
     box-sizing: border-box;
     margin-top: 70px;
 }
-  
+
 #stretching-image img {
     display: block;
-    width: 50%;
+    width: 35%;
     margin-left: 20%;
     height: auto;
 }
 
 #multi-stretching-image img {
-      display: inline-block;
-      width: 45%; /* adjust as needed */
-      margin-right: 10px; /* adjust as needed */
+    display: inline-block;
+    width: 35%;
+    /* adjust as needed */
+    margin-right: 10px;
+    /* adjust as needed */
+    margin-left: 10%;
 }
 
 #player-one {
-      margin-right: 0;
+    margin-right: 0;
 }
 
-#stretching-caption, #multi-stretching-caption {
+#stretching-caption,
+#multi-stretching-caption {
     text-align: center;
     font-size: 18px;
     margin-top: 10px;
@@ -78,4 +83,3 @@ body {
     height: auto;
     z-index: 2;
 }
-  

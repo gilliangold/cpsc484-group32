@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Exercising</title>
+    <title>Wellness Activity</title>
     <link rel="stylesheet" type="text/css" href="static/css/exercise.css">
     <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
 </head>
-<body>
-<input id="choice" hidden value="{{ choice }}">
-<input id="mode" hidden value="{{ mode }}">
-<div class = "vertical"></div>
-<div class="circle" id="timer">30</div>
-<div class="warning">Warning:Wrong Number of Players Detected </div>
-<div id="header">
-    <span id="progress-stretch" class="stretch progress">1 / 8</span>
-    <span id="progress-breathe" class="breathe progress">1 / 10</span>
-    <img src="static/images/koala-sitting.webp" class="koala"/>
-</div>
-<div class="container">
-    <div id="video">
-        <video class="stretch" controls autoplay muted width="100%">
-            <source src="static/videos/stretch.mp4" type="video/mp4">
-        </video>
-        <video class="breathe" controls autoplay muted loop width="100%">
-            <source src="static/videos/breathe.mp4" type="video/mp4">
-        </video>
-    </div>
-    <div id="kinect-window">
-        <div>
-            <img class="twod" width="100%"/>
-        </div>
-        <div class="instruction">
-            {{ mode }} Player Required
-        </div>
-    </div>
-</div>
 
-<script src="static/js/exercise.js"></script>
+<body>
+    <input id="choice" hidden value="{{ choice }}">
+    <input id="mode" hidden value="{{ mode }}">
+    <div class="vertical"></div>
+    <div class="circle" id="timer">30</div>
+    <div class="warning">Warning:Wrong Number of Players Detected </div>
+    <div id="header">
+        <span id="progress-stretch" class="stretch progress">1 / 8</span>
+        <span id="progress-breathe" class="breathe progress">1 / 10</span>
+        <img src="static/images/koala-sitting.webp" class="koala" />
+    </div>
+    <div class="container">
+        <div id="video">
+            <video class="stretch" controls autoplay muted width="100%">
+                <source src="static/videos/stretch.mp4" type="video/mp4">
+            </video>
+            <video class="breathe" controls autoplay muted loop width="100%">
+                <source src="static/videos/breathe.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="kinect-window">
+            <div>
+                <img class="twod" width="100%" />
+            </div>
+            <div class="instruction">
+                {{ mode }} Player Required
+            </div>
+        </div>
+    </div>
+    <div id="top-box">
+        Follow the video on the left + check your movements on the right!
+    </div>
+
+    <script src="static/js/exercise.js"></script>
 </body>
+
 </html>

@@ -1,48 +1,51 @@
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Breathing: Select Player Mode</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="static/css/breathe-player-mode.css">
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
-  
-    </head>
-  
-  <body>
-    <input id="choice" hidden value="breathe">
-    <div class = "vertical"></div>
-    <div class="container">
-      <div id="kinect-window">
-        <img class="twod" height="100%"/>
-      </div>
-        <div id="top-box">
-            Stand on either side to select single vs. multiplayer...
-        </div>
+  <title>Breathing: Select Player Mode</title>
 
-        <div id="middle-line">
+  <link rel="stylesheet" type="text/css" href="static/css/breathe-player-mode.css">
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
 
-        <div id="breathing-image">
-            <img src="static/images/breathing.png" alt="One person breathing">
-            <div id="breathing-caption">
-                One Player
-            </div>
-        </div>
-        
-        <img id="koala-image" src="static/images/koala-sitting.webp" alt="Koala">
-     
-        <div id="multi-breathing-image">
-            <img id="person-one" src="static/images/breathing.png" alt="Two people breathing">
-            <img id="person-two" src="static/images/breathing.png" alt="Two people breathing">
-            <div id="multi-breathing-caption">
-                Two Players
-            </div>
-        </div>
-        </div>
+</head>
+
+<body>
+  <input id="choice" hidden value="breathe">
+  <div class="vertical"></div>
+  <div class="container">
+    <div id="kinect-window">
+      <img class="twod" height="100%" />
     </div>
-    
-    <script src="static/js/player_mode.js"></script>
-  </body>
+    <div id="top-box">
+      To select one player, extend your right arm to the left side of your body.
+      <br> To select two players, extend your left arm to the right side of your body.
+    </div>
+
+    <div id="middle-line">
+
+      <div id="breathing-image">
+        <img src="static/images/breathing.png" alt="One person breathing">
+        <div id="breathing-caption">
+          One Player
+        </div>
+      </div>
+
+      <img id="koala-image" src="static/images/koala-sitting.webp" alt="Koala">
+
+      <div id="multi-breathing-image">
+        <img id="person-one" src="static/images/breathing.png" alt="Two people breathing">
+        <img id="person-two" src="static/images/breathing.png" alt="Two people breathing">
+        <div id="multi-breathing-caption">
+          Two Players
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="static/js/player_mode.js"></script>
+</body>
+
 </html>

@@ -1,23 +1,36 @@
 var host = "cpsc484-04.yale.internal:8888";
+var timer = null;
 
-$(document).ready(function () {
+$(document).ready(function() {
   setTimeout(function () {
     frames.start();
   }, 2000);
   twod.start();
+
+  // start timer when page loads
+  timer = setTimeout(function() {
+    window.location.href = "http://127.0.0.1:8000/"; // redirect to welcome page after 3 minutes
+  }, 180000); // 3 minutes in milliseconds
 });
 
 var frames = {
   socket: null,
 
-  start: function () {
+  start: function() {
     var url = "ws://" + host + "/frames";
     frames.socket = new WebSocket(url);
     frames.socket.onmessage = function (event) {
       var command = frames.get_left_wrist_command(JSON.parse(event.data));
       console.log(command)
-      if (command != null) {
-        window.location.href = "/activity_choice"
+      if (command !== null) {
+        sendWristCommand(command);
+        clearTimeout(timer);
+      }
+      else {
+        // reset timer if user has moved
+        timer = setTimeout(function() {
+          window.location.href = "http://127.0.0.1:8000/"; // redirect to welcome page after 3 minutes
+        }, 180000); // 3 minutes in milliseconds
       }
     }
   },
@@ -60,15 +73,62 @@ var frames = {
 var twod = {
   socket: null,
 
-  start: function () {
+  start: function() {
     var url = "ws://" + host + "/twod";
     twod.socket = new WebSocket(url);
-    twod.socket.onmessage = function (event) {
+    twod.socket.onmessage = function(event) {
       twod.show(JSON.parse(event.data));
     }
   },
 
-  show: function (twod) {
-    $('.twod').attr("src", 'data:image/pnjpegg;base64,' + twod.src);
+  show: function(twod) {
+    $('.twod').attr("src", 'data:image/pnjpegg;base64,'+twod.src);
   }
 };
+
+let sketch_rewardpetcanvas = function(p) {
+  p.setup = function(){
+    p.createCanvas(400, 400);
+    p.background(0);
+
+   
+  }
+
+  p.draw = function() {
+    p.background(230, 200, 15);
+    p.drawingContext.shadowBlur = 32;
+    p.drawingContext.shadowColor = color(207, 7, 99);
+    p.rect(width/2, height/2, 300, 300, 300);
+  }
+}
+
+new p5(sketch_rewardpetcanvas, 'rewardpetcanvas');
+
+
+function sendWristCommand(command) {
+  switch (command) {
+    case 73:
+      $("#koala-sitting").attr("src", "static/images/koala-raised-hand.webp");
+      break;
+    case 74:
+      $("#koala-sitting").attr("src", "static/images/koala-extended-hand.webp");
+      break;
+    case 76:
+      window.location.href = "/"
+      break;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -11,8 +11,8 @@ body {
 
 .vertical {
     border-left: 6px solid white;
-    height: 110%;
-    position:absolute;
+    height: 100%;
+    position: absolute;
     /* top: 50%; */
     left: 50%;
     z-index: -1;
@@ -39,28 +39,31 @@ body {
 
 
 #stretching-image {
-    width: 40%;
+    width: 30%;
     float: left;
+    margin-left: 40px;
     padding: 60px;
     box-sizing: border-box;
     margin-top: 10px;
 }
 
 #breathing-image {
-    width: 45%;
+    width: 35%;
     float: right;
     margin-top: 40px;
     padding: 60px;
     box-sizing: border-box;
 }
 
-#stretching-image img, #breathing-image img {
+#stretching-image img,
+#breathing-image img {
     display: block;
     width: 65%;
     height: auto;
 }
 
-#stretching-caption, #breathing-caption {
+#stretching-caption,
+#breathing-caption {
     text-align: center;
     font-size: 18px;
     margin-top: 20px;
