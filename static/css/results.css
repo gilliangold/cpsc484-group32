@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+.stretch {
+    background-color: #FFFB97;
+}
+
 .container {
     padding: 20px;
     gap: 20px;
@@ -11,6 +15,7 @@ body {
 #top-box {
     font-family: Arial, sans-serif;
     background-color: white;
+    margin-top: 3%;
     padding: 10px;
     text-align: center;
     font-weight: bold;
@@ -22,7 +27,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 25%;
     height: auto;
 }
 
@@ -32,45 +37,23 @@ body {
     left: 20px;
 }
 
-#koala-image {
+#koala {
+    position: relative;
+  }
+  
+  #koala img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 50%;
     height: auto;
-    width: 25%;
-}
-
-.parentContainer {
-    position: relative;
-    text-align: center;
-    color: black;
-}
-
-.bottom-right {
+  }
+  
+  .bottom-left {
     position: absolute;
-    font-size: 1.25vw;
+    bottom: 13%;
+    right: 34%;
+    font-size: 1.85vw;
     font-family: Arial, sans-serif;
-    bottom: 25%;
-    right: 20%;
-}
-
-.bottom-left {
-    position: absolute;
-    font-size: 1.25vw;
-    font-family: Arial, sans-serif;
-    bottom: 25%;
-    left: 16%;
-}
-
-.column {
-    float: left;
-    width: 45%;
-    padding: 5px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+    color: black; 
+  }

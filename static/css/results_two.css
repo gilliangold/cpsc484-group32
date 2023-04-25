@@ -3,6 +3,9 @@ body {
     margin: 0;
 }
 
+.stretch {
+    background-color: #FFFB97;
+}
 .container {
     padding: 20px;
     gap: 20px;
@@ -11,7 +14,6 @@ body {
 #top-box {
     font-family: Arial, sans-serif;
     background-color: white;
-    margin-top: 3%;
     padding: 10px;
     text-align: center;
     font-weight: bold;
@@ -23,33 +25,30 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
-    height: auto;
-}
-
-#first-txt {
-    position: absolute;
-    top: 17px;
-    left: 20px;
-}
-
-#koala {
-    position: relative;
-}
-
-#koala img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 50%;
     height: auto;
 }
 
+#koala-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 25%;
+}
+
+.bottom-right {
+    position: absolute;
+    font-size: 1.25vw;
+    font-family: Arial, sans-serif;
+    bottom: 25%;
+    right: 20%;
+}
+
 .bottom-left {
     position: absolute;
-    bottom: 13%;
-    right: 34%;
-    font-size: 1.85vw;
+    font-size: 1.25vw;
     font-family: Arial, sans-serif;
-    color: black;
+    bottom: 25%;
+    left: 16%;
 }
