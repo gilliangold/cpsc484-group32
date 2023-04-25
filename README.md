@@ -48,9 +48,9 @@ Gillian Gold (gg558)
 - Collaborated on TV display debugging and testing.
 
 Ben Sterling (bgs37)
--Created the results, multiplayer results, reward choice, and reward pet screens.
--Contributed to writing the README file.
--Collaborated on TV display debugging and testing.
+- Created the results, multiplayer results, reward choice, and reward pet screens.  
+- Contributed to writing the README file.  
+- Collaborated on TV display debugging and testing.  
 
 
 Cathy Li (sl2857)
