@@ -45,7 +45,7 @@ body {
     height: auto;
   }
   
-  #results {
+  .bottom-left {
     position: absolute;
     bottom: 13%;
     right: 34%;
