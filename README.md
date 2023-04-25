@@ -34,12 +34,17 @@ Finally, navigate to http://127.0.0.1:8000/ in a web browser to preview the prot
 - We added a two-seconds wait time for each redirect to avoid skipping webpages during the process. Otherwise, an action from the user caught by the screen will be received by several webpages. Thus, users need to wait for 2 seconds to start their move based on the instructions.   
 - Due to the delay of receiving kinect data, users need to wait for redirecting to the next page after their moves.
 - The original design of the exercise duration is 5 minutes. For test and prototype purpose, the exercise will be finished in 1-2 minutes. The stretching completes when 2 / 8 exercises (shown on the screen) completed, and the breathing completes when 3 / 10 exercises (shown on the screen) completed.
-- We implemented the redirect between different screens based on the left wrist data. Users need to move their left wrist along with the provided instructions to interact with the screen.
-- The error prevention of the exercise is based on the detected number of players in the screen. With other people shown up in the background of the screen, the warning will popup unexpectedly.
+- We implemented the redirect between different screens based on the wrist data. Users need to move their wrist along with the provided instructions to interact with the screen.
+- The error prevention of the exercise is based on the detected number of players in the screen. With other people shown up in the background of the screen, the warning may popup unexpectedly.
 
 # Collaboration Record
 Gillian Gold (gg558)
-
+- Organized meeting times and sent out reminder messages to advance progress.
+- Created the welcome, activity choice, and player mode choice screens.
+- Implemented the timeout function to return to the welcome screen after 3 minutes.
+- Implemented the function to give an accuracy/completion score on the results page.
+- Contributed to writing the README file.
+- Collaborated on TV display debugging and testing.
 
 Ben Sterling (bgs37)
 
