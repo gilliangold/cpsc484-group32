@@ -12,7 +12,7 @@ $('.bottom-right').html(`Check Out Your Results!<br><br>Completeness: ${complete
 $(document).ready(function () {
   setTimeout(function () {
     frames.start();
-  }, 2000);
+  }, 5000);
   twod.start();
 });
 

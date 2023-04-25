@@ -113,8 +113,11 @@ function sendWristCommand(command) {
     case 74:
       $("#koala-sitting").attr("src", "static/images/koala-extended-hand.webp");
       break;
+    case 75:
+      $("#koala-sitting").attr("src", "static/images/koala1.png");
+      break;
     case 76:
-      window.location.href = "/"
+      $("#koala-sitting").attr("src", "static/images/koala2.png");
       break;
   }
 }
