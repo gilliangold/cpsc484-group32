@@ -1,7 +1,22 @@
 body {
     background-color: lightskyblue;
+    margin: 0;
 }
 
+.container {
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.vertical {
+    border-left: 6px solid white;
+    height: 100%;
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    z-index: -1;
+}
 
 
 .container {
@@ -26,7 +41,7 @@ body {
     background-color: gray;
     grid-column: 2/3;
     grid-row: 2/3;
-    block-size: 35%;
+    block-size: 20%;
 }
 
 #top-box {
@@ -38,19 +53,21 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
 #koala {
-    width: 40%;
+    width: 30%;
+    height: auto;
     float: left;
-    margin-left: 40px;
+    margin-left: 10%;
     padding: 60px;
     box-sizing: border-box;
-    margin-top: 10px;
 }
 
 #home {
-    width: 40%;
+    width: 30%;
+    height: auto;
     float: right;
-    margin-top: 10px;
+    margin-right: 10%;
     padding: 60px;
     box-sizing: border-box;
 }
@@ -62,10 +79,13 @@ body {
     height: auto;
 }
 
-#koala-caption,
-#breathing-caption {
+#koala img {
+    margin-left: 15%
+}
+
+#koala-caption {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 20px;
     font-weight: bold;
     font-family: Arial, sans-serif;

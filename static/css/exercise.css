@@ -11,6 +11,7 @@ html, body {
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0px 1fr 100px;
+    justify-content: center;
 }
 
 #video {
@@ -21,6 +22,8 @@ html, body {
     grid-row: 2/3;
     padding-left: 50px;
     padding-right: 50px;
+    width: 80%;
+    margin-left: 10%
 }
 
 #kinect-window {
@@ -31,6 +34,7 @@ html, body {
     grid-row: 2/3;
     padding-left: 50px;
     padding-right: 50px;
+    width: 80%;
 }
 
 .vertical {
@@ -82,12 +86,13 @@ html, body {
 }
 
 .instruction {
-    margin-top: 50px;
+    margin-top: 10%;
     justify-content: center;
     text-align: center;
     padding: 20px;
     background: #FFF;
     font-size: 40px;
+    height: 10%
 }
 
 .warning {
@@ -107,14 +112,16 @@ html, body {
     border:3px solid black;
 }
 
-#top-box {
+#bottom-box {
     background-color: black;
     position: relative;
     z-index: 3;
     color: white;
-    padding: 3%;
+    padding: 1%;
+    margin-top: -3%;
     text-align: center;
+    justify-content:center;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     font-family: Arial, sans-serif;
 }

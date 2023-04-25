@@ -86,23 +86,23 @@ var twod = {
   }
 };
 
-let sketch_rewardpetcanvas = function(p) {
-  p.setup = function(){
-    p.createCanvas(400, 400);
-    p.background(0);
-
-   
-  }
-
-  p.draw = function() {
-    p.background(230, 200, 15);
-    p.drawingContext.shadowBlur = 32;
-    p.drawingContext.shadowColor = color(207, 7, 99);
-    p.rect(width/2, height/2, 300, 300, 300);
-  }
-}
-
-new p5(sketch_rewardpetcanvas, 'rewardpetcanvas');
+//let sketch_rewardpetcanvas = function(p) {
+//  p.setup = function(){
+//    p.createCanvas(400, 400);
+//    p.background(0);
+//
+//
+//  }
+//
+//  p.draw = function() {
+//    p.background(230, 200, 15);
+//    p.drawingContext.shadowBlur = 32;
+//    p.drawingContext.shadowColor = color(207, 7, 99);
+//    p.rect(width/2, height/2, 300, 300, 300);
+//  }
+//}
+//
+//new p5(sketch_rewardpetcanvas, 'rewardpetcanvas');
 
 
 function sendWristCommand(command) {
