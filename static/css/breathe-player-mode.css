@@ -11,14 +11,15 @@ body {
 .vertical {
     border-left: 6px solid white;
     height: 100%;
-    position:absolute;
+    position: absolute;
     /* top: 50%; */
     left: 50%;
     z-index: -1;
 }
 
 #top-box {
-    font-family: Arial, sans-serif;background-color: white;
+    font-family: Arial, sans-serif;
+    background-color: white;
     padding: 10px;
     text-align: center;
     font-weight: bold;
@@ -49,7 +50,7 @@ body {
     padding: 50px;
     box-sizing: border-box;
 }
-  
+
 #breathing-image img {
     display: block;
     width: 55%;
@@ -59,12 +60,15 @@ body {
 
 #multi-breathing-image img {
     display: inline-block;
-    width: 40%; /* adjust as needed */
-    margin-right: 10px; /* adjust as needed */
+    width: 40%;
+    /* adjust as needed */
+    margin-right: 10px;
+    /* adjust as needed */
     margin-left: 30px;
 }
 
-#breathing-caption, #multi-breathing-caption {
+#breathing-caption,
+#multi-breathing-caption {
     text-align: center;
     font-size: 18px;
     margin-top: 10px;

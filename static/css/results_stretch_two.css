@@ -22,45 +22,45 @@ body {
     left: 20px;
 }
 
-#koala-image{
+#koala-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: auto;
     width: 25%;
-    }
-    
-    .parentContainer {
+}
+
+.parentContainer {
     position: relative;
     text-align: center;
     color: black;
-    }
+}
 
-    .bottom-right {
-        position: absolute;
-        font-size: 1.25vw;
-        font-family: Arial, sans-serif;
-        bottom: 25%;
-        right: 20%;
-        }
+.bottom-right {
+    position: absolute;
+    font-size: 1.25vw;
+    font-family: Arial, sans-serif;
+    bottom: 25%;
+    right: 20%;
+}
 
-    .bottom-left {
-        position: absolute;
-        font-size: 1.25vw;
-        font-family: Arial, sans-serif;
-        bottom: 25%;
-        left: 16%;
-    }
+.bottom-left {
+    position: absolute;
+    font-size: 1.25vw;
+    font-family: Arial, sans-serif;
+    bottom: 25%;
+    left: 16%;
+}
 
 .column {
     float: left;
     width: 45%;
     padding: 5px;
-  }
-  
-  /* Clear floats after image containers */
-  .row::after {
+}
+
+/* Clear floats after image containers */
+.row::after {
     content: "";
     clear: both;
     display: table;
-  }
+}

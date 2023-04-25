@@ -9,17 +9,17 @@ const accuracy2 = Math.floor(Math.random() * 21) + 80;
 $('.bottom-left').html(`Check Out Your Results!<br><br>Completeness: ${completeness}%<br><br>Accuracy: ${accuracy}%`);
 $('.bottom-right').html(`Check Out Your Results!<br><br>Completeness: ${completeness2}%<br><br>Accuracy: ${accuracy2}%`);
 
-$(document).ready(function() {
+$(document).ready(function () {
   setTimeout(function () {
-      frames.start();
-    }, 2000);
+    frames.start();
+  }, 2000);
   twod.start();
 });
 
 var frames = {
   socket: null,
 
-  start: function() {
+  start: function () {
     var url = "ws://" + host + "/frames";
     frames.socket = new WebSocket(url);
     frames.socket.onmessage = function (event) {
@@ -68,15 +68,15 @@ var frames = {
 var twod = {
   socket: null,
 
-  start: function() {
+  start: function () {
     var url = "ws://" + host + "/twod";
     twod.socket = new WebSocket(url);
-    twod.socket.onmessage = function(event) {
+    twod.socket.onmessage = function (event) {
       twod.show(JSON.parse(event.data));
     }
   },
 
-  show: function(twod) {
-    $('.twod').attr("src", 'data:image/pnjpegg;base64,'+twod.src);
+  show: function (twod) {
+    $('.twod').attr("src", 'data:image/pnjpegg;base64,' + twod.src);
   }
 };
