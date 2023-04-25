@@ -89,7 +89,7 @@ var twod = {
 function sendWristCommand(command) {
   switch (command) {
     case 74:
-      window.location.href = "/reward?choice=stretch"
+      window.location.href = "/reward?action=left"
       break;
     case 76:
       window.location.href = "/"

@@ -1,9 +1,23 @@
 body {
     background-color: lightskyblue;
-    font-family: Arial, sans-serif;
-    color: white;
 }
 
+
+
+.container {
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.vertical {
+    border-left: 6px solid white;
+    height: 100%;
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    z-index: -1;
+}
 
 #kinect-window {
     display: flex;
@@ -12,36 +26,47 @@ body {
     background-color: gray;
     grid-column: 2/3;
     grid-row: 2/3;
-    block-size: 30%;
+    block-size: 35%;
 }
 
-/* #koala {
-    width: 40%;
-    float: left;
-    padding: 60px;
-    box-sizing: border-box;
-    margin-top: 10px;
+#top-box {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
 }
 
-#home {
-    width: 40%;
-    float: right;
-    margin-top: 40px;
-    padding: 40px;
-    box-sizing: border-box;
-} */
 #koala {
     width: 40%;
     float: left;
+    margin-left: 40px;
     padding: 60px;
     box-sizing: border-box;
     margin-top: 10px;
 }
 
 #home {
-    width: 45%;
+    width: 40%;
     float: right;
-    margin-top: 40px;
+    margin-top: 10px;
     padding: 60px;
     box-sizing: border-box;
+}
+
+#koala img,
+#home img {
+    display: block;
+    width: 65%;
+    height: auto;
+}
+
+#koala-caption,
+#breathing-caption {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
 }
