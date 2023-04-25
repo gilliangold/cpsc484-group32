@@ -14,6 +14,7 @@ body {
 #top-box {
     font-family: Arial, sans-serif;
     background-color: white;
+    margin-top: 3%;
     padding: 10px;
     text-align: center;
     font-weight: bold;
@@ -21,34 +22,32 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#koala-main-image {
+#koala {
+    position: relative;
+  }
+  
+  #koala img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     height: auto;
-}
-
-#koala-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    width: 25%;
-}
-
-.bottom-right {
-    position: absolute;
-    font-size: 1.25vw;
-    font-family: Arial, sans-serif;
-    bottom: 25%;
-    right: 20%;
-}
+  }
 
 .bottom-left {
     position: absolute;
-    font-size: 1.25vw;
+    bottom: 15%;
+    right: 34%;
+    font-size: 1vw;
     font-family: Arial, sans-serif;
-    bottom: 25%;
-    left: 16%;
-}
+    color: black; 
+  }
+
+.bottom-right {
+    position: absolute;
+    bottom: 15%;
+    right: 30%;
+    font-size: 1vw;
+    font-family: Arial, sans-serif;
+    color: black; 
+  }

@@ -109,8 +109,9 @@ html, body {
 
 #top-box {
     background-color: black;
+    position: relative;
+    z-index: 3;
     color: white;
-    margin: auto;
     padding: 3%;
     text-align: center;
     font-weight: bold;
