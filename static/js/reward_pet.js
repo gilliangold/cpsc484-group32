@@ -107,14 +107,11 @@ var twod = {
 
 function sendWristCommand(command) {
   switch (command) {
-    case 73:
-      $("#koala-sitting").attr("src", "static/images/koala-raised-hand.webp");
-      break;
     case 74:
-      $("#koala-sitting").attr("src", "static/images/koala-extended-hand.webp");
+      $("#koala-start-pose").attr("src", "static/images/koala-extended-hand.webp");
       break;
     case 76:
-      window.location.href = "/"
+      $("#koala-start-pose").attr("src", "static/images/koala-raised-hand.webp");
       break;
   }
 }
