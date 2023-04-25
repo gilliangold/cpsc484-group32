@@ -1,14 +1,14 @@
 var host = "cpsc484-04.yale.internal:8888";
 var timer = null;
 
-$(document).ready(function() {
+$(document).ready(function () {
   setTimeout(function () {
-      frames.start();
-    }, 2000);
+    frames.start();
+  }, 2000);
   twod.start();
 
   // start timer when page loads
-  timer = setTimeout(function() {
+  timer = setTimeout(function () {
     window.location.href = "http://127.0.0.1:8000/"; // redirect to welcome page after 3 minutes
   }, 180000); // 3 minutes in milliseconds
 });
@@ -16,7 +16,7 @@ $(document).ready(function() {
 var frames = {
   socket: null,
 
-  start: function() {
+  start: function () {
     var url = "ws://" + host + "/frames";
     frames.socket = new WebSocket(url);
     frames.socket.onmessage = function (event) {
@@ -28,7 +28,7 @@ var frames = {
       }
       else {
         // reset timer if user has moved
-        timer = setTimeout(function() {
+        timer = setTimeout(function () {
           window.location.href = "http://127.0.0.1:8000/"; // redirect to welcome page after 3 minutes
         }, 180000); // 3 minutes in milliseconds
       }
@@ -73,16 +73,16 @@ var frames = {
 var twod = {
   socket: null,
 
-  start: function() {
+  start: function () {
     var url = "ws://" + host + "/twod";
     twod.socket = new WebSocket(url);
-    twod.socket.onmessage = function(event) {
+    twod.socket.onmessage = function (event) {
       twod.show(JSON.parse(event.data));
     }
   },
 
-  show: function(twod) {
-    $('.twod').attr("src", 'data:image/pnjpegg;base64,'+twod.src);
+  show: function (twod) {
+    $('.twod').attr("src", 'data:image/pnjpegg;base64,' + twod.src);
   }
 };
 
