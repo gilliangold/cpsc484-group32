@@ -61,7 +61,7 @@ var frames = {
 $(document).ready( function() {
     var time = $('#choice').val() == 'stretch' ? 35 : 30
     var refresh_time = $('#choice').val() == 'stretch' ? 35 : 30
-    var end_num = $('#choice').val() == 'stretch' ? 2 : 3
+    var end_num = $('#choice').val() == 'stretch' ? 8 : 10
     var nums = 0
     setInterval( function() {
         time--;
