@@ -1,4 +1,10 @@
 var host = "cpsc484-04.yale.internal:8888";
+const completeness = Math.floor(Math.random() * 21) + 80; // generates a random integer between 80 and 100
+const accuracy = Math.floor(Math.random() * 21) + 80;
+
+// Update the HTML with the new values
+$('.bottom-left').html(`Check Out Your Results!<br><br>Completeness: ${completeness}%<br><br>Accuracy: ${accuracy}%`);
+$('.bottom-right').html(`Check Out Your Results!<br><br>Completeness: ${completeness}%<br><br>Accuracy: ${accuracy}%`);
 
 $(document).ready(function() {
   setTimeout(function () {
