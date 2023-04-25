@@ -34,7 +34,6 @@ Finally, navigate to http://127.0.0.1:8000/ in a web browser to preview the prot
 # Constraints in Deployment Environment
 - We added a two-second wait time for each redirect between webpages to avoid skipping pages during the process. Otherwise, an action from the user caught by the screen will be received by several webpages. Thus, users are instructed to wait for 2 seconds to start their gesture.   
 - Due to the delay in receiving kinect data, users are asked to wait for redirecting to the next page after their moves.
-- The original design of the exercise duration is 5 minutes. For test and prototype purpose, the exercise will be finished in 1-2 minutes. The stretching completes when 2 / 8 exercises (shown on the screen) completed, and the breathing completes when 3 / 10 exercises (shown on the screen) completed.
 - We implemented the redirect between different screens based on the wrist data. Users need to move their wrist along with the provided instructions to interact with the screen.
 - To prevent more users for an exercise than the system is expecting, we implemented an error prevention measure based on the detected number of players in view. However, as our implementation environment has a high-traffic corridor in part of the frame, the warning may popup unexpectedly.
 
@@ -49,9 +48,11 @@ Gillian Gold (gg558)
 
 Ben Sterling (bgs37)
 - Created the results, multiplayer results, reward choice, and reward pet screens.  
+- Implemented the utilization of spatial data for switching between images on the reward pages in the backend
 - Contributed to writing the README file.  
-- Collaborated on TV display debugging and testing.  
+- Collaborated on TV display debugging and testing.
 
+Graditude Statement: I personally struggled with the implementing languages/systems, but Cathy and Gillian were patient while I was learning, and both individually took the time out to teach me things I didn't understand and took extra looks over my code. They went above and beyond in supporting me, and I really appreciated it!
 
 Cathy Li (sl2857)
 - Created the exercise screens with different activities (stretch/breathe) and player modes (single/multiple).
