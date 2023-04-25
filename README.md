@@ -41,6 +41,7 @@ Finally, navigate to http://127.0.0.1:8000/ in a web browser to preview the prot
 Gillian Gold (gg558)
 - Organized meeting times and sent out reminder messages to advance progress.
 - Created the welcome, activity choice, and player mode choice screens.
+- Worked on the results, multiplayer results, reward choice screens.
 - Implemented the timeout function to return to the welcome screen after 3 minutes.
 - Implemented the function to give an accuracy/completion score on the results page.
 - Contributed to writing the README file.
